@@ -1,3 +1,6 @@
+body{
+  background: #D1E2FB;
+}
 p{
   font-size: 18px;
   color: #333335;;
@@ -8,4 +11,17 @@ p{
 }
 .title{
   color: #909090;
+}
+.background-image{
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center;
+}
+.card{
+  top: 0;
+  transition: top 0.3s;
+}
+
+.card:hover{
+  top: -16px;
 }

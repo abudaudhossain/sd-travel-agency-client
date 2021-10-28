@@ -1,15 +1,13 @@
 .banner{
     height: 100vh;
     width: 100%;
-    background: url('https://i.ibb.co/PWsDpC6/4192024-ai.png');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center center;
+    background: url('https://i.ibb.co/PWsDpC6/4192024-ai.png') no-repeat center center;
     position: relative;
 }
+
 .banner-text{
     position: absolute;
-    top: 30%;
+    top: 20%;
   
 }
 .banner-text h1{
