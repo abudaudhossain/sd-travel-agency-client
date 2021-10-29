@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import Offer from '../offer/Offer';
 
 
 const Offers = () => {
     const [offers, setOffers] = useState([]);
-   
+
     useEffect(() => {
         fetch('https://mighty-shore-75033.herokuapp.com/offers')
             .then(res => res.json())
@@ -22,12 +22,13 @@ const Offers = () => {
             <Container className="py-5">
                 <Row className="mb-5">
                     {
-                        offers.map(offer => <Col
+                        offers.length ? offers.map(offer => <Col
                             key={offer._id}
                             className="my-3"
                             lg={4}>
                             <Offer offer={offer}></Offer>
-                        </Col>)
+                        </Col>) :
+                            <Spinner animation="border" variant="primary" />
                     }
 
                 </Row>

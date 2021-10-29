@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-const Order = ({booking, handelUpdateStatus}) => {
+const Order = ({booking, handelUpdateStatus, handelDelete}) => {
     const {status,username,userEmail,offerTitle, _id} = booking;
     return (
         <Row className="my-3">
@@ -20,7 +20,7 @@ const Order = ({booking, handelUpdateStatus}) => {
         </Col>
         <Col>           
                 <button onClick = {() => handelUpdateStatus(_id)} className="btn btn-success">Active Now</button>
-                <button className="btn btn-success mx-2">Delete</button>           
+                <button onClick = {() => handelDelete(_id)} className="btn btn-danger mx-2">Delete</button>           
         </Col>
     </Row>
     );

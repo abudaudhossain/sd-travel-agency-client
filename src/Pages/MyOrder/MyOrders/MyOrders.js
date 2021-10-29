@@ -28,14 +28,14 @@ const MyOrders = () => {
             .then(data => {
                 setIsDelete(!isDelete);
             })
-            console.log(id);
+            // console.log(id);
         }
     }
     return (
         <Container className="m-5">
             <Row>
                 {
-                    myOrder ? myOrder.map( order =><Col 
+                    myOrder.length ? myOrder.map( order =><Col 
                         className = "my-3"
                         key={order._id}
                         md={6}>

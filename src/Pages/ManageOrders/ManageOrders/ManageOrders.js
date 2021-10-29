@@ -24,9 +24,23 @@ const ManageOrders = () => {
         .then(data =>{
             setIsChange(!isChange);
         });
-        console.log(id);
     }
-    console.log(bookings)
+    //delete Booking
+    const handelDelete = (id) =>{
+        const isDelete = window.confirm("Are you sure delete this offer?");
+        if(isDelete){
+            fetch(`https://mighty-shore-75033.herokuapp.com/deleteBooking/${id}`, {
+                method: 'DELETE',
+            })
+            .then(res => res.json())
+            .then(data => {
+                setIsChange(!isChange);
+            })
+            // console.log(id);
+        }
+    }
+
+    // console.log(bookings)
     return (
         <Container>
             <h1>this is manage Orders</h1>
@@ -52,6 +66,7 @@ const ManageOrders = () => {
                     key={booking._id}
                     booking={booking}
                     handelUpdateStatus ={handelUpdateStatus}
+                    handelDelete = {handelDelete}
                 ></Order>) :
                     <Spinner animation="border" variant="primary" />
             }
