@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { Container, Spinner } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import useAuth from '../../hooks/useAuth';
-import { useHistory } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 
 const Details = () => {
     const [offer, setOffer] = useState({});
     const { register, handleSubmit, reset } = useForm();
     const { user } = useAuth();
     const history = useHistory();
+    const {id} = useParams();
 
     // console.log(user)
     const onSubmit = data => {
@@ -34,7 +35,7 @@ const Details = () => {
 
 
     useEffect(() => {
-        axios.get('http://localhost:5000/offer/617b93bcae1b49942c382a0f')
+        axios.get(`http://localhost:5000/offer/${id}`)
             .then(data => {
                 setOffer(data.data)
             })
