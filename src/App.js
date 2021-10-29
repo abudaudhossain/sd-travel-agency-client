@@ -38,7 +38,7 @@ function App() {
             <Login></Login>
           </Route>
         </Switch>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </Router>
     </AuthProvider>
   );

@@ -13,7 +13,7 @@ const MyOrders = () => {
     
 
     useEffect(() =>{
-        axios.post('http://localhost:5000/myOrder', {userId})
+        axios.post('https://mighty-shore-75033.herokuapp.com/myOrder', {userId})
         .then(res => setMyOrder(res.data))
     },[isDelete])
     
@@ -21,7 +21,7 @@ const MyOrders = () => {
     const handelDelete = (id) =>{
         const isDelete = window.confirm("Are you sure delete this offer?");
         if(isDelete){
-            fetch(`http://localhost:5000/deleteBooking/${id}`, {
+            fetch(`https://mighty-shore-75033.herokuapp.com/deleteBooking/${id}`, {
                 method: 'DELETE',
             })
             .then(res => res.json())

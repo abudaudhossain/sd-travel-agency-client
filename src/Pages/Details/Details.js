@@ -21,7 +21,7 @@ const Details = () => {
         data.image = offer.image;
         data.status = "pending";
 
-        axios.post("http://localhost:5000/booking", data)
+        axios.post("https://mighty-shore-75033.herokuapp.com/booking", data)
             .then(res => {
                 if (res.data.acknowledged) {
                     alert("Your Booking is Success");
@@ -35,7 +35,7 @@ const Details = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/offer/${id}`)
+        axios.get(`https://mighty-shore-75033.herokuapp.com/offer/${id}`)
             .then(data => {
                 setOffer(data.data)
             })
