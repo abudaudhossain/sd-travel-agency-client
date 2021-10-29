@@ -5,7 +5,7 @@ import AddService from './Pages/AddService/AddService';
 import Details from './Pages/Details/Details';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
-import ManageOrders from './Pages/ManageOrders/ManageOrders';
+import ManageOrders from './Pages/ManageOrders/ManageOrders/ManageOrders';
 import MyOrders from './Pages/MyOrder/MyOrders/MyOrders';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
