@@ -46,7 +46,8 @@ const Details = () => {
                 <div>
                     {
                         offer.name ? <div className="d-flex flex-column justify-content-center">
-
+                            <h1>{user.displayName}</h1>
+                            <h4>{user.email}</h4>
                             <img className="img-fouled" src={offer.image} alt="OfferImage" />
                             <div>
                                 <h2>{offer.name}</h2>
