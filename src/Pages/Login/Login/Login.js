@@ -1,10 +1,18 @@
 import React from 'react';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import "./Login.css"
 
 const Login = () => {
     const {googleSignIn, user, error} = useAuth();
     console.log(user);
+    const history = useHistory();
+    const location = useLocation();
+    const { from } = location.state || { from: { pathname: "/" } };
+    if (user.email) {
+        history.replace(from);
+    }
+
     return (
         <div className="d-flex flex-column align-items-center m-5">
             <div className="login d-flex flex-column align-items-center pt-5">
