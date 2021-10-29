@@ -6,8 +6,9 @@ import Details from './Pages/Details/Details';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
-import ManageOrders from './Pages/ManageOrders/ManageOrders/ManageOrders';
-import MyOrders from './Pages/MyOrder/MyOrders/MyOrders';
+import ManageBooking from './Pages/ManageBooking/ManageBooking/ManageBooking';
+import MyBookings from './Pages/MyBookings/MyBookings/MyBookings';
+
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
@@ -20,22 +21,22 @@ function App() {
           <Route exact path='/'>
             <Home></Home>
           </Route>
-          <Route  path='/home'>
+          <Route path='/home'>
             <Home></Home>
           </Route>
-          <PrivateRoute  path='/myOrders'>
-            <MyOrders></MyOrders>
+          <PrivateRoute path='/myOrders'>
+            <MyBookings></MyBookings>
           </PrivateRoute>
-          <PrivateRoute  path='/manageOrders'>
-            <ManageOrders></ManageOrders>
+          <PrivateRoute path='/manageBooking'>
+            <ManageBooking></ManageBooking>
           </PrivateRoute>
-          <PrivateRoute  path='/addOffer'>
+          <PrivateRoute path='/addOffer'>
             <AddOffer></AddOffer>
           </PrivateRoute>
-          <PrivateRoute  path='/offerDetails/:id'>
+          <PrivateRoute path='/offerDetails/:id'>
             <Details></Details>
           </PrivateRoute>
-          <Route  path='/login'>
+          <Route path='/login'>
             <Login></Login>
           </Route>
         </Switch>

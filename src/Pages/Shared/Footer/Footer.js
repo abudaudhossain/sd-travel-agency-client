@@ -12,17 +12,17 @@ const Footer = () => {
                         <div className="container text-center text-md-start">
                             <div className="row">
 
-                                <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <div className="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
                                     {/* <!-- Content --> */}
                                     <h6 className="text-uppercase fw-bold mb-4">
                                         <i className="fas fa-gem me-3"></i><span className="title-logo">SD</span> Travel
                                     </h6>
                                     <p>
-                                    There are two famous natural wonders in Bangladesh – the Sundarbans National Park, which is home to the largest mangrove forest in the world, and Cox’s Bazar, the longest uninterrupted natural sand beach in the world. 
+                                        There are two famous natural wonders in Bangladesh – the Sundarbans National Park, which is home to the largest mangrove forest in the world, and Cox’s Bazar, the longest uninterrupted natural sand beach in the world.
                                     </p>
                                 </div>
 
-                                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <div className="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
                                     {/* <!-- Links --> */}
                                     <h6 className="text-uppercase fw-bold mb-4">
                                         Our Tour Type
@@ -38,7 +38,7 @@ const Footer = () => {
                                     </p>
                                 </div>
 
-                                <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <div className="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
                                     {/* <!-- Links --> */}
                                     <h6 className="text-uppercase fw-bold mb-4">
                                         Useful links
@@ -57,7 +57,7 @@ const Footer = () => {
                                     </p>
                                 </div>
 
-                                <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                                     {/* <!-- Links --> */}
                                     <h6 className="text-uppercase fw-bold mb-4">
                                         Contact Us
@@ -75,7 +75,7 @@ const Footer = () => {
                             {/* <!-- Grid row --> */}
                         </div>
                     </section>
-                   
+
                 </div>
                 <div className="text-center p-4" style={{ backgroundColor: " rgba(0, 0, 0, 0.05)" }}>
                     © 2021 Copyright:

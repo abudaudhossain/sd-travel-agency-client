@@ -7,10 +7,10 @@ import TravelTypes from '../TravelTypes/TravelTypes';
 const Home = () => {
     return (
         <div>
-           <Banner></Banner>
-           <TravelTypes></TravelTypes>
-           <Offers></Offers>
-           <Subscribe></Subscribe>
+            <Banner></Banner>
+            <TravelTypes></TravelTypes>
+            <Offers></Offers>
+            <Subscribe></Subscribe>
         </div>
     );
 };

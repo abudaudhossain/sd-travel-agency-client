@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button} from 'react-bootstrap';
-import './myOrder.css';
+import { Button } from 'react-bootstrap';
+import './myBooking.css';
 
 
-const MyOrder = ({order, handelDelete}) => {
-    const {date, offerTitle,image, _id} = order;
-    
+const MyBooking = ({ order, handelDelete }) => {
+    const { date, offerTitle, image, _id } = order;
+
     return (
         <div className="card">
             <div className="row no-gutters">
@@ -16,7 +16,7 @@ const MyOrder = ({order, handelDelete}) => {
                     <div className="card-body">
                         <h5 className="card-title">{offerTitle}</h5>
                         <h6>{date}</h6>
-                        <Button onClick ={() => handelDelete(_id)} className="btn btn-primary">Delete Item</Button>
+                        <Button onClick={() => handelDelete(_id)} className="btn btn-primary">Delete Item</Button>
                     </div>
                 </div>
             </div>
@@ -24,4 +24,4 @@ const MyOrder = ({order, handelDelete}) => {
     );
 };
 
-export default MyOrder;
+export default MyBooking;

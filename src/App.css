@@ -1,29 +1,35 @@
-body{
+body {
   background: #D1E2FB;
 }
-p{
+
+p {
   font-size: 18px;
-  color: #333335;
+  color    : #333335;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.title-logo{
+
+.title-logo {
   color: #0e85f5;
 }
-.title{
+
+.title {
   color: #909090;
 }
-.background-image{
-  background-size: cover;
-  background-repeat: no-repeat; 
+
+.background-image {
+  background-size    : cover;
+  background-repeat  : no-repeat;
   background-position: center center;
 }
-.card{
-  top: 0;
+
+.card {
+  top       : 0;
   transition: top 0.3s;
 }
 
-.card:hover{
+.card:hover {
   top: -16px;
 }

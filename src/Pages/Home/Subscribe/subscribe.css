@@ -1,5 +1,5 @@
 .subscribe {
-    height    : 60vh;
+    min-height: 60vh;
     width     : 100%;
     background: url('https://gotravel.qodeinteractive.com/wp-content/uploads/2016/10/home-parallax.jpg') no-repeat center center fixed;
 }

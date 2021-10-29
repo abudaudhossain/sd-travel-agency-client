@@ -10,7 +10,7 @@ const Details = () => {
     const { register, handleSubmit, reset } = useForm();
     const { user } = useAuth();
     const history = useHistory();
-    const {id} = useParams();
+    const { id } = useParams();
 
     // console.log(user)
     const onSubmit = data => {
