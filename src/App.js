@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
 import AddService from './Pages/AddService/AddService';
+import Details from './Pages/Details/Details';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
@@ -30,11 +31,14 @@ function App() {
           <Route  path='/addService'>
             <AddService></AddService>
           </Route>
+          <Route  path='/offerDetails/:id'>
+            <Details></Details>
+          </Route>
           <Route  path='/login'>
             <Login></Login>
           </Route>
         </Switch>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </Router>
     </AuthProvider>
   );

@@ -12,13 +12,13 @@ const TravelTypes = () => {
             </div>
             <Container className="py-5">
                 <Row>
-                    <Col>
+                    <Col lg={4} md={6}>
                        <TourType image ="https://www.schengenvisainfo.com/news/wp-content/uploads/2021/05/paris-France-1.jpg" title="Travel to european countries"></TourType>
                     </Col>
-                    <Col>
+                    <Col  lg={4} md={6}>
                        <TourType image ="https://cdn.britannica.com/36/178636-050-805D750A/mosque-sandstone-mausoleum-complex-Taj-Mahal-Uttar.jpg" title="Travel to neighboring countries"></TourType>
                     </Col>
-                    <Col>
+                    <Col  lg={4} md={6}>
                        <TourType image ="https://nomadparadise.com/wp-content/uploads/2021/04/bangladesh-places-01-1024x683.jpg" title="Travel to own country"></TourType>
                     </Col>
                 </Row>
