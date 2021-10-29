@@ -1,0 +1,21 @@
+footer{
+    background: url('https://cdn.thecrazytourist.com/wp-content/uploads/2017/03/Saint-Martin.jpg') no-repeat center center;
+    background-size: cover;
+    position:relative;
+    color: white;
+}
+footer::before{
+    content: '';
+    background: #021624c2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+footer p{
+    color: white;
+}
+footer div{
+    z-index: 1000;
+    color: white;
+}

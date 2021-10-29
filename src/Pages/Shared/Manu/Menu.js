@@ -14,9 +14,14 @@ const Menu = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-                        <Nav.Link as={Link} to="/services">Services</Nav.Link>
-                        <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+                        <Nav.Link as={Link} to="/myOrders">My Orders</Nav.Link>
+                        <Nav.Link as={Link} to="/manageOrders">Manage All Orders</Nav.Link>
+                        <Nav.Link as={Link} to="/addService">Add A New Service</Nav.Link>
+                    </Nav>
+                    <Nav>
+                        <Nav.Link as={Link} to="/login">
+                            <button className="btn btn-primary">Login</button>
+                        </Nav.Link>
                     </Nav>
 
                 </Navbar.Collapse>

@@ -3,9 +3,11 @@ body{
 }
 p{
   font-size: 18px;
-  color: #333335;;
+  color: #333335;
 }
-
+a{
+  text-decoration: none;
+}
 .title-logo{
   color: #0e85f5;
 }
