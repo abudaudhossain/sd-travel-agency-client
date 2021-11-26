@@ -1,22 +1,17 @@
 # SD TRAVEL AGENCY
-A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination.
+Users can see all offers or services that provide SDTravel Agency on this website. Users can book any services and delete their own booking service. also, can manage booking services.
 
 
 
 ## Improtent Link
 
 My awesome SD Travel agency Web site live link [SD Travel](https://sd-travel-agency.web.app/)
-Also see my SD Travel agency Website Code [SD Travel code](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-abudaudhossain)
-SD Travel Agency Sever site code Link[SD Travel server](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-abudaudhossain)
+Also see my SD Travel agency Website Code [SD Travel code](https://github.com/abudaudhossain/sd-travel-agency-client)
+SD Travel Agency Sever site code Link[SD Travel server](https://github.com/abudaudhossain/sd-travel-agency-server)
 
 ## Features and Functionality of My Website:
-* Firebase Authentication
-* Login By Google
-* Use React Router
-* Route will be private/protected routes
-* Use Context API 
-* Booking any tour place for Traveling
-* Add Tour Place
-* Show own booking offer
+* Firebase Authentication and  Login By Google and use React Router, Route will be private/protected routes and Use Context API
+* A MERN stack web application with a dynamic services section.
+* An admin can add a new service that will be visible in the services and the user can book any serves and  show all booking and delete any item
 
 
