@@ -1,0 +1,22 @@
+.search-container {
+    position  : absolute;
+    background: #faf8f8;
+    min-width : 80%;
+    right     : 50%;
+    top       : 90%;
+    transform : translate(50%, 50%);
+    padding   : 40px;
+}
+
+.search-container form {
+    display        : flex;
+    justify-content: center;
+}
+
+.search-container input,
+select {
+    margin      : 8px;
+    padding     : 6px 10px;
+    font-size   : 18px;
+    border: 2px solid rgb(32, 46, 42);
+}
