@@ -13,7 +13,7 @@ const Offer = ({ offer }) => {
                     {description.slice(0, 100)}
                 </Card.Text>
                 <div className="d-flex justify-content-between">
-                    <Card.Link as={Link} to={`/offerDetails/${_id}`}><Button variant="primary">Book Now</Button></Card.Link>
+                    <Card.Link as={Link} to={`/offerDetails/${_id}`}><Button variant="primary">View details</Button></Card.Link>
                     <h4>${price}</h4>
                 </div>
             </Card.Body>

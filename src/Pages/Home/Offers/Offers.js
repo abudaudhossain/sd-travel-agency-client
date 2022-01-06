@@ -22,7 +22,7 @@ const Offers = () => {
             <Container className="py-5">
                 <Row className="mb-5">
                     {
-                        offers.length ? offers.map(offer => <Col
+                        offers.length ? offers.slice(0,6).map(offer => <Col
                             key={offer._id}
                             className="my-3"
                             lg={4}>

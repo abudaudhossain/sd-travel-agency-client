@@ -45,29 +45,27 @@ const Details = () => {
             <Container className="my-5 mx-auto">
                 <div>
                     {
-                        offer.name ? <div className="d-flex flex-column justify-content-center">
-                            <h1>{user.displayName}</h1>
-                            <h4>{user.email}</h4>
-                            <img className="img-fouled" src={offer.image} alt="OfferImage" />
-                            <div>
+                        offer.name ? <div className="d-flex justify-content-center">
+                            <img className="img-fouled col-lg-5" src={offer.image} alt="OfferImage" />
+                            <div className="px-5 col-lg-7 ">
                                 <h2>{offer.name}</h2>
-                                <div>
-                                    <p>{offer.description}</p>
-                                    <h4>Total Travel Price : ${offer.price}</h4>
-                                </div>
 
+                                <h4>Total Travel Price : ${offer.price}</h4>
+                                <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column justify-content-center ">
+                                    <label>Address</label>
+                                    <input className="mt-3 p-2" {...register("address", { required: true })} placeholder="Address" />
+                                    <label>Travel Date:</label>
+                                    <input className='my-3 p-2' {...register("date", { required: true })} type="date" />
+                                    <button className="btn btn-primary" type="submit">Booking Now</button>
+                                </form>
                             </div>
                         </div> : <Spinner animation="border" variant="success" />
 
                     }
 
-                    <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column justify-content-center col-lg-8 ">
-                        <label>Address</label>
-                        <input className="mt-3 p-2" {...register("address", { required: true })} placeholder="Address" />
-                        <label>Travel Date:</label>
-                        <input className='my-3 p-2' {...register("date", { required: true })} type="date" />
-                        <button className="btn btn-primary" type="submit">Booking Now</button>
-                    </form>
+                    <div className="col-lg-8 mt-5">
+                        <p>{offer.description}</p>
+                    </div>
                 </div>
             </Container>
         </div>
