@@ -1,15 +1,19 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+
+import { useHistory } from 'react-router-dom';
 import "./SearchContainer.css";
 
 const SearchContainer = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const  history= useHistory();
+    const onSubmit = data => {
+        // console.log(data)
+        history.push(`/packages/${data.location}`);
+    };
     return (
         <div className="search-container">
             <form onSubmit={handleSubmit(onSubmit)}>
-
-                <input {...register("packageName", { required: true })} placeholder="Enter Package Name.." />
 
                 <input {...register("location", { required: true })} placeholder="Enter Location ..." />
                 <input type="date" {...register("SetDate", { required: true })} />

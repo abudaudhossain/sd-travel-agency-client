@@ -8,6 +8,7 @@ import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ManageBooking from './Pages/ManageBooking/ManageBooking/ManageBooking';
 import MyBookings from './Pages/MyBookings/MyBookings/MyBookings';
+import SearchPackages from './Pages/SearchPackages/SearchPackages';
 
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path='/home'>
             <Home></Home>
+          </Route>
+          <Route path='/packages/:location'>
+            <SearchPackages />
           </Route>
           <PrivateRoute path='/myOrders'>
             <MyBookings></MyBookings>
